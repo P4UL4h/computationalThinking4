@@ -39,6 +39,16 @@ function onPointerMove(event: PointerEvent) {
 function onPointerUp() {
   dragging = false
 }
+
+// Center of the visible area in board coordinates.
+function viewCenter() {
+  return {
+    x: (window.innerWidth / 2 - offset.x) / scale.value,
+    y: (window.innerHeight / 2 - offset.y) / scale.value,
+  }
+}
+
+defineExpose({ viewCenter })
 </script>
 
 <template>
