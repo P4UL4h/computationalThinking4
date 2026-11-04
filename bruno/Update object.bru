@@ -1,0 +1,25 @@
+meta {
+  name: Update object
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/objects/{{objectId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "x": 48
+  }
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:3001
+  objectId: '''
+      666c0016-e9c0-411f-8691-bf2779225f39
+    
+  '''
+}

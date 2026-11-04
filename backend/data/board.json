@@ -1,0 +1,55 @@
+[
+  {
+    "id": "note-1",
+    "type": "sticky-note",
+    "x": 216,
+    "y": 144,
+    "width": 192,
+    "height": 192,
+    "text": "Hello, board!",
+    "color": "green",
+    "fontSize": 18,
+    "bold": false
+  },
+  {
+    "id": "note-2",
+    "type": "sticky-note",
+    "x": 1008,
+    "y": 336,
+    "width": 192,
+    "height": 192,
+    "text": "Drag me around",
+    "color": "pink",
+    "fontSize": 18,
+    "bold": false
+  },
+  {
+    "id": "text-1",
+    "type": "text",
+    "x": 600,
+    "y": 120,
+    "width": 240,
+    "height": 72,
+    "text": "Just some text",
+    "fontSize": 18,
+    "bold": false
+  },
+  {
+    "id": "circle-1",
+    "type": "circle",
+    "x": 648,
+    "y": 216,
+    "width": 144,
+    "height": 144,
+    "color": "blue"
+  },
+  {
+    "type": "circle",
+    "x": 122,
+    "y": 576,
+    "width": 144,
+    "height": 144,
+    "color": "blue",
+    "id": "666c0016-e9c0-411f-8691-bf2779225f39"
+  }
+]

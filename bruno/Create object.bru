@@ -1,0 +1,31 @@
+meta {
+  name: Create object
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/objects
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "circle",
+    "x": 0,
+    "y": 0,
+    "width": 144,
+    "height": 144,
+    "color": "blue"
+  }
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:3001
+}
+
+script:post-response {
+  // Remember the new id so Update and Delete hit this object.
+  bru.setVar("objectId", res.body.id);
+}
